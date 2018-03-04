@@ -1,0 +1,51 @@
+$bg-color:#333;
+$font-color: #fff;
+$primary-color: #008ed6;
+$dark-overlay: rgba(0,0,0,0.7);
+body{
+  background: $bg-color;
+  color: $font-color;
+}
+.navbar{
+  border-bottom: $primary-color 3px solid;
+  opacity:  0.8;
+}
+#home-section{
+  background: url('../img/main-img.jpeg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+
+.home-inner{
+  padding-top: 150px;
+}
+.dark-overlay{
+  background-color: $dark-overlay;
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+}
+.card{
+  opacity: 0.9;
+}
+.fa{
+  border-radius: 2px;
+  background: #fff;
+  padding: 3px;
+  opacity: 0.6;
+  margin-top: 5px;
+  color: $primary-color;
+}
+}
+.zoom{
+  position: relative;
+  overflow: hidden;
+}
+.zoom:hover img{
+  transform: scale(1.1);
+}
+.zoom img{
+  transition: all 0.3s;
+}
